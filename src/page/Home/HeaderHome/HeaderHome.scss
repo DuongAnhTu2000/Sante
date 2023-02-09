@@ -1,0 +1,91 @@
+@import '../../../scss/setting/style.scss';
+
+
+
+.home--header {
+    font-size: 13px;
+    padding: 0px 40px;
+    height: 40px;
+    background-color: color(background-body);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: $font--primary;
+    color: color(color-header);
+
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 33%;
+
+        & i {
+            margin: 0px 6px;
+            cursor: pointer;
+            color: color(color-header);
+        }
+    }
+
+    &__center {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 600;
+        align-items: center;
+        font-family: $font--title;
+
+        & a {
+            color: color(color-pseudo);
+
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 33%;
+        font-size: 13px;
+
+        & span {
+            margin-right: 4px;
+            font-weight: 600;
+            color: color(color-header);
+        }
+
+        &__wishlist {
+            margin-right: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.4s ease-out;
+            font-family: $font--title;
+
+        }
+
+        &__login.lock {
+            font-weight: 600;
+            font-size: 16px;
+            font-family: $font--title;
+            transition: all 0.4s ease-out;
+
+            .lnr-lock {
+                margin-right: 6px;
+                font-weight: 600;
+            }
+        }
+
+        &__wishlist:hover,
+        &__login:hover {
+            cursor: pointer;
+            color: color(color-pseudo);
+
+        }
+
+        .btn--login {
+            color: color(color-header);
+
+        }
+    }
+
+}

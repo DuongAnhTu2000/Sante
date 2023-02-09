@@ -1,0 +1,152 @@
+@import '../../../scss/setting/style.scss';
+
+
+
+.Cosmetic--article {
+    padding: 48px 0px 110px 0px;
+
+    .Cosmetic--container {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        width: 86%;
+
+        &__row {
+            display: flex;
+            gap: 30px;
+
+            &--col {
+
+
+                .tag--date {
+                    position: absolute;
+                    top: calc(29% - 100px);
+                    right: 0;
+                    width: 123px;
+                    -webkit-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    -webkit-transform-origin: right bottom;
+                    -ms-transform-origin: right bottom;
+                    transform-origin: right bottom;
+                    z-index: 22;
+
+                    & a {
+                        display: inline-block;
+                        background: color(background-body);
+                        width: auto;
+                        padding: 7px 7px 7px 0;
+                        font-weight: 600;
+                    }
+                }
+
+                & img {
+                    height: auto;
+                    width: 100%;
+                    margin-bottom: 22px;
+                    position: relative;
+                    cursor: pointer;
+                }
+
+                & a {
+                    line-height: 1.8em;
+                }
+
+
+
+                .Cosmetics--content {
+                    font-size: 14px;
+                    letter-spacing: 0.04em;
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    font-family: $font--primary;
+
+                    &__categories {
+                        position: relative;
+                        padding-right: 8px;
+                    }
+
+                    & a {
+                        color: color(color-button);
+                        margin-right: 6px;
+                    }
+                }
+
+                .Cosmetics--text {
+
+                    & h4 a {
+                        font-weight: 600;
+                        text-transform: none;
+                        color: color(color-pseudo);
+                        font-size: 23px;
+                        line-height: 1.26em;
+                        letter-spacing: 0;
+                        margin: 25px 0;
+                font-family: $font--title;
+                    }
+
+                    & p {
+                        margin: 16px 0 0;
+                        color: color(color-primary);
+                        font-size: 14px;
+                        font-weight: 300;
+                font-family: $font--primary;
+                    }
+                }
+
+                .Cosmetic--button {
+                    margin-top: 24px;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        width: 102px !important;
+                        height: 14px;
+                        background: color(background-button-hover);
+                        display: block;
+                        position: absolute;
+                        z-index: -1;
+                        top: 50%;
+                        left: 0;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        transition: transform 0.5s;
+                    }
+
+                    &:hover:after {
+                        content: "";
+                        width: 105px !important;
+                        height: 14px;
+                        background: color(background-button-hover);
+                        color: color(background-button-hover);
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        z-index: -1;
+                        left: 0;
+                        transform: scaleX(1);
+                        transform-origin: left;
+                        transition: transform 0.5s;
+                    }
+
+                    &__readmore {
+                        font-weight: 600;
+                        margin-left: 8px;
+                        font-family: $font--title;
+
+                        & span {
+                            font-size: 16px;
+                            left: -8px;
+                            cursor: pointer;
+                            color: color(color-button);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

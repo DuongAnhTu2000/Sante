@@ -1,0 +1,49 @@
+@import "../setting/variable.scss";
+
+
+.button--style {
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid color(border-color-button);
+    font-weight: 600;
+    line-height: 25px;
+    padding: 15px 57px;
+    background: transparent;
+    font-size: 15px;
+    opacity: 0.8;
+    color: color(text-color-button);
+    font-family: $font--title;
+
+    &:after {
+        background-color: color(border-color-button);
+        letter-spacing: 0px;
+        content: "";
+        top: 8px;
+        left: 8px;
+        transition: ease-in-out all .3s;
+        display: block;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        color: color(color-white);
+        font-weight: 600;
+        position: absolute;
+        opacity: 0.2;
+    }
+
+    &:hover:after {
+        background-color: color(border-color-button);
+        top: 12px;
+        left: 12px;
+        transition: ease-in-out all .3s;
+        display: block;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        color: color(color-white);
+        font-weight: 600;
+        line-height: 21px;
+        text-align: left;
+        position: absolute;
+        opacity: 0.2;
+    }
+}
+

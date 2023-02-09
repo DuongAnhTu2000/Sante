@@ -1,0 +1,56 @@
+@import '../../../scss/setting/style.scss';
+
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    width: 100%;
+
+    &--content {
+        position: relative;
+
+        & img {
+
+            width: 100%;
+            background-attachment: fixed;
+        }
+
+        &__title {
+            justify-content: center;
+            text-align: center;
+            color: color(color-white);
+            position: absolute;
+            top: 26%;
+            left: 18%;
+
+
+            & p {
+                font-size: 130px;
+                font-family: $font--special;
+            }
+
+            & h4 {
+                font-family: $font--title;
+                margin: -25px 0 30px 0;
+                font-weight: 600;
+            }
+
+        }
+    }
+
+    .Banner--button {
+        color: color(color-white);
+        border: 1px solid color(color-white);
+        font-family: $font--title;
+
+        &:after {
+            background-color: color(background-button-hover);
+        }
+
+        &:hover::after {
+            background-color: color(background-button-hover);
+        }
+    }
+}

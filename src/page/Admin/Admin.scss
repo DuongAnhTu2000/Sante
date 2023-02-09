@@ -1,0 +1,42 @@
+@import '../../scss/setting/style.scss';
+
+.dashboard {
+    margin: 100px;
+
+    .icon {
+        cursor: pointer;
+    }
+
+    .editUser {
+        margin-top: 24px;
+    }
+    .table-style {
+        font-family: $font--title;
+    }
+    .form--edit {
+        gap: 14px;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+
+    }
+
+    .form--update {
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .form--adduser {
+        display: flex;
+        gap: 14px;
+        margin-top: 24px;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    .button--update {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}

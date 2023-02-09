@@ -1,0 +1,127 @@
+@import '../setting/style.scss';
+
+.Footer--container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+
+    &__wrap {
+
+        padding: 10px 40px;
+        position: relative;
+
+        .Footer--top {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+            padding: 111px 0 116px;
+            
+            & span {
+                margin: 0 8px 18px 0;
+                color: color(color-primary);
+
+            }
+
+            & h4 {
+                margin-bottom: 12px;
+                font-family: $font--title;
+                font-weight: 600;
+            }
+
+            & p {
+                color: color(color-primary);
+                margin-bottom: 10%;
+                font-family: $font--primary;
+
+            }
+
+            &__item {
+                padding-right: 21%;
+
+                & span  {
+                    &.icon {
+                        color: color(footer-icon);
+                    }
+                }
+            }
+
+            & a {
+                text-decoration: none;
+                color: color(color-primary);
+                line-height: 40px;
+                font-size: 15px;
+
+                &:hover {
+                    color: color(color-hover);
+                    transition: all 0.4s ease;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0;
+                height: 0.5px;
+                width: 100%;
+                background-color: color(line-pseudo);
+            }
+        }
+
+        .Footer--bottom {
+            position: relative;
+            padding: 4px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: color(text-footer);
+
+            &__item {
+                display: flex;
+                font-size: 14px;
+                color: color(text-footer);
+                
+                & img {
+                        cursor: pointer;
+                }
+                & p {
+                    color: color(text-footer);
+                    margin-left: 12px;
+                    font-family: $font--primary;
+
+                }
+                & a {
+                    text-decoration: none;
+                    color: color(text-footer);
+                    gap: 8px;
+                    margin-right: 8px;
+                    line-height: 40px;
+
+                    
+                    &:hover {
+                        color: color(color-pseudo);
+                        transition: all 0.4s ease;
+                    }
+                }
+
+                &.item--right {
+                    align-items: baseline;
+                }
+
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0;
+                height: 0.5px;
+                width: 100%;
+                background-color: color(line-pseudo);
+            }
+
+        }
+    }
+}

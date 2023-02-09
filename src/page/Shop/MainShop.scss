@@ -1,0 +1,192 @@
+@import '../../scss/setting/style.scss';
+
+.main--product {
+    padding: 68px 0px 115px 0px;
+    margin-left: 100px;
+
+    &__result {
+        display: flex;
+        flex-direction: row;
+        justify-content:  space-between;
+        margin-bottom: 40px;
+        background-color: none !important;
+        padding: -8px !important;
+        font-family: $font--primary;
+        align-items: center;
+
+        .product--filter {
+            font-family: $font--primary;
+            text-align: left;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .swiper--shop {
+        width: 30% !important;
+    }
+
+    .price--filter {
+        text-align: left;
+        position: relative;
+        font-family: $font--title;
+
+        & h4 {
+            font-size: 23px;
+            font-weight: 600;
+            color: color(text-title);
+            margin-bottom: 10px;
+        }
+
+        .MuiSlider-thumb {
+            width: 8px;
+            height: 8px;
+
+
+        }
+
+        .price--label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.471em;
+            color: color(text-title);
+            position: relative;
+
+            & button {
+                border: none;
+                z-index: 1;
+                background: none;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 14px;
+                    background: color(background-button-hover);
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    left: 5px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.3s;
+                    top: 50%;
+                }
+
+                &:hover:after {
+                    content: "";
+                    width: 130%;
+                    height: 14px;
+                    background: color(background-button-hover);
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    z-index: -1;
+                    left: -6px;
+                    transform: scaleX(1);
+                    transform-origin: left;
+                    transition: transform 0.3s;
+                }
+            }
+        }
+
+
+        .widget--products {
+            margin-bottom: 42px;
+
+            .search--product {
+                margin-bottom: 42px;
+                margin-top: 16px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                padding-left: 0;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+
+                    & a {
+                        text-decoration: none;
+                        font-family: $font--title;
+                        font-weight: 600;
+                        text-transform: none;
+                        font-size: 17px;
+                        line-height: 1.23em;
+                        color: color(color-product);
+
+                    }
+
+                    .widget--content {
+                        margin-left: 19px;
+                        font-weight: 300;
+
+                        & span {
+                            font-family: $font--primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .widget--categories {
+            padding-left: 0;
+            font-family: $font--primary;
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                padding-left: 0px;
+
+                & span {
+
+                    & a {
+                        text-decoration: none;
+                        color: color(text-list-category);
+
+                        &:hover {
+                            color: color(color-pseudo);
+                            transition: all 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        .widget--social {
+
+            & ul {
+                padding-left: 0px;
+
+                & a {
+                    text-decoration: none;
+                    color: color(text-footer);
+                    gap: 8px;
+                    margin-right: 8px;
+                    line-height: 40px;
+
+
+                    &:hover {
+                        color: color(color-pseudo);
+                        transition: all 0.4s ease;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

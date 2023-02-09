@@ -1,0 +1,122 @@
+@import '../setting/style.scss';
+
+.modal--content {
+    padding: 60px 36px 48px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal--title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        & span {
+            color: color(color-subscribe);
+            font-family: $font--special;
+            font-size: 30px;
+            margin-bottom: 11px;
+        }
+
+        & h2 {
+            font-size: 38px;
+            font-family: $font--title;
+            font-weight: 600;
+        }
+
+        & label {
+            font-size: 14px;
+            font-family: $font--primary;
+            color: color(color-primary);
+            margin-top: 10px;
+            max-width: fit-content;
+        }
+
+    }
+
+    .modal--input {
+
+        & input {
+            border: none;
+            border-bottom: 1px solid color(color-button);
+            margin-bottom: 24px;
+            font-family: $font--title;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            line-height: 27px;
+            padding-bottom: 2px;
+            color: var(--color-text-input);
+            cursor: pointer;
+
+            &::placeholder {
+                color: color(text-input);
+            }
+        }
+    }
+
+    .modal--link {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-family: $font--primary;
+        color: color(color-primary);
+
+        &__remember {
+            flex-direction: row;
+            display: flex;
+            align-items: baseline;
+            margin-top: 10px;
+
+            .text--remember {
+                font-size: 14px;
+            }
+
+            & p {
+                font-size: 14px;
+            }
+
+            & input {
+                margin-right: 5px;
+            }
+        }
+
+        .forgot--password {
+            font-size: 14px;
+            color: color(color-selection);
+            text-decoration: none;
+
+            &:hover {
+                color: color(color-primary);
+                transition: color .3s ease-out;
+            }
+        }
+    }
+
+
+    .button--modal {
+        width: 100%;
+        font-weight: 600;
+        padding-top: 7px;
+    }
+
+}
+
+
+.MuiButtonBase-root.tab--style {
+    padding:16px 0;
+    background-color: #f7f7f7;
+    font-weight: 600;
+    font-family: $font--title;
+    text-transform: capitalize;
+    font-size: 16px;
+    
+    &:hover {
+        color: color(color-pseudo);
+    }
+}

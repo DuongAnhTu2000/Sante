@@ -1,0 +1,6 @@
+/*Start build Color*/
+@function color($color-name) {
+    @return var(--color-#{$color-name});
+}
+
+/*End build Color*/

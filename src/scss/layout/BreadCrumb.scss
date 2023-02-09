@@ -1,0 +1,49 @@
+@import '../setting/style.scss';
+
+
+.breadcrumb--container {
+    height: 101px;
+    display: inline-block;
+    margin: 0 100px;
+
+
+    &__wrap {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 10px;
+
+        & h3 {
+            font-size: 30px;
+            font-family: $font--title;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            font-family: $font--primary;
+            color: color( text-breadcrumb);
+            &:hover {
+                color: color(text-input);
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 1.5px;
+        background: color(line-pseudo);
+        padding: 0 40px;
+        left: 40px;
+        cursor: default;
+
+
+    }
+}

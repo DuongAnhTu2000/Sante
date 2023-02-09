@@ -1,0 +1,109 @@
+@import '../../../scss/setting/style.scss';
+
+
+
+.navbar--home {
+    padding: 0px 40px;
+    justify-content: space-around;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+        height: 95px;
+        color: var(--color-primary);
+
+        & img {
+            height: 100%;
+            cursor: pointer;
+
+        }
+    }
+
+    &__menu {
+        color: color(color-navbar);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: $font--title;
+
+        & a {
+            text-decoration: none;
+            color: color(color-navbar);
+
+            &:hover {
+                color: color(color-button);
+            }
+        }
+
+        &__list {
+            margin: 0 21px;
+            position: relative;
+            z-index: 2;
+
+            &:after {
+                content: "";
+                width: 100%;
+                height: 14px;
+                background: color(background-button-hover);
+                display: block;
+                position: absolute;
+                z-index: -1;
+                left: 5px;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 0.3s;
+                top: 50%;
+            }
+
+            &:hover:after {
+                content: "";
+                width: 130%;
+                height: 14px;
+                background: color(background-button-hover);
+                display: block;
+                position: absolute;
+                top: 50%;
+                z-index: -1;
+                left: -6px;
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 0.3s;
+            }
+        }
+
+        .cart {
+            width: 26px;
+            position: relative;
+            display: inline-block;
+
+            & a {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__button {
+                &:hover+.cart--dropdown {
+                    display: block;
+                }
+                
+            }
+
+            &--count {
+                position: absolute;
+                font-size: 13px;
+                line-height: 3.077em;
+                width: 100%;
+                top: 38%;
+                text-align: center;
+            }
+          
+        }
+
+
+    }
+}

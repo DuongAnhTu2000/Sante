@@ -1,0 +1,36 @@
+@import '../../scss/setting/style.scss';
+
+.dashboard--product {
+    margin: 100px;
+
+    .btn--upload {
+        width: 10%;
+        padding: 13px;
+    }
+
+    .image--product {
+        width: 60px;
+    }
+
+    &__title {
+        font-family: $font--title;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .form--addProduct {
+        display: flex;
+        justify-content: center !important;
+        gap: 14px;
+        margin-top: 40px;
+        align-items: center;
+        margin-bottom: 50px;
+        .btn--addProduct {
+            padding: 0;;
+        }
+    }
+
+    .btn--update {
+        margin-top: 16px;
+    }
+}

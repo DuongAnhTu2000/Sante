@@ -1,0 +1,52 @@
+@import '../setting/style.scss';
+
+
+
+.product {
+    &--categories {
+        padding: 0px 40px 40px;
+
+        &__row {
+
+            display: flex;
+            position: relative;
+            gap: 40px;
+            text-align: center;
+            flex: 1;
+
+
+            & img {
+                width: 100%;
+                cursor: pointer;
+
+               
+            }
+            .product--image {
+                transition: transform .5s;
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+            .product--image__content {
+                top: 33%;
+                position: absolute;
+                color: color(color-white);
+                width: 32%;
+                font-family: $font--title;
+
+                & h3 {
+                    font-family: $font--special;
+                    font-size: 124px;
+                }
+
+                & h4 {
+                    font-size: 23px;
+                    font-weight: 700;
+                    margin-top: -38px;
+                }
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,81 @@
+@import '../../../scss/setting/style.scss';
+
+
+
+.Subscribe--container {
+    border-style: solid;
+    border-width: 0 40px 40px;
+    border-color: color(border-color);
+    padding: 113px 0 100px;
+    background-color: color(background-body);
+
+    &__wrap {
+        padding: 0% 22% 0% 22%;
+
+        & h4 {
+            margin-bottom: 25px ;
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 29px;
+            color: color(color-pseudo);
+            font-family: $font--title;
+        }
+
+        .Slide--Paragraph__title {
+
+            & span {
+                color: color(color-subscribe);
+                font-family: $font--special;
+                font-size: 30px;
+                margin-bottom: 11px;
+            }
+        }
+
+        .Subscribe--form {
+            display: inline;
+            justify-content: center;
+
+            & input {
+                border: none;
+                border-bottom: 1px solid color(color-button);
+                font-size: 16px;
+                color: color(text-input);
+                line-height: 27px;
+                font-weight: 600;
+                padding-left: 0;
+                padding-bottom: 2px;
+                width: 100%;
+                background-color: transparent;
+                cursor: pointer;
+                outline: none;
+
+                &::placeholder {
+                    color: color(text-input);
+                }
+            }
+
+            & div {
+                margin: 26px 0 28px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            .Subscribe--button {
+                background-color: color(background-button) !important;
+                color: color(text-color-button) !important;
+                border-color: color(color-button) !important;
+                padding: 11px 44px;
+                font-family: $font--title;
+
+                &:after {
+                    background-color: color(button-hover-color);
+                }
+
+                &:hover:after {
+                    background-color: color(button-hover-color);               
+                }
+            }
+        }
+
+    }
+}

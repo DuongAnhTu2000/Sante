@@ -1,0 +1,69 @@
+@import '../setting/style.scss';
+
+.paragraph {
+
+    &--text {
+        padding: 125px 0px 0px 0px;
+
+    }
+
+    &--wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+
+
+        &__content {
+
+            & h6 {
+                font-size: 17px;
+                font-weight: 400;
+                color: color(color-primary);
+                line-height: 1.5;
+                flex-wrap: wrap;
+                padding: 0 18%;
+                font-family: $font--primary;
+            }
+
+            & h2 {
+                font-size: 38px;
+                font-family: $font--title;
+                font-weight: 600;
+            }
+
+            &.text--cart {
+
+                h6 {
+                    padding: 0;
+                    font-family: $font--primary;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+    }
+
+    &--divier {
+        text-align: center;
+        margin: -21px 0px 0px 0px;
+        width: 100%;
+
+    &__separator {
+        width: 58px;
+        margin: 16px auto;
+        border-bottom: 2px solid color(border-bottom);
+        display: block;
+    }
+
+}
+
+    .product--list {
+        & i {
+            color: color(color-button);
+            font-size: 12px;
+        }
+    }
+}

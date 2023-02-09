@@ -1,0 +1,67 @@
+/* ==========================================================================
+   # START VARIABLE SETTING
+   ==========================================================================
+*/
+//Begin variable root
+
+
+$font--title: "Montserrat", sans-serif;
+$font--primary: "Poppins", sans-serif;
+$font--special: 'Quentin', sans-serif;
+
+
+$colors: (background-body: #fcfcfc,
+    background-button:#ffffff,
+    background-button-hover:#e9ebe7,
+    border-color-button:#88927e,
+    border-color: #FFFFFF,
+    border-bottom:#a5b199,
+    border-cart: #dbe3d2,
+    button-hover-color: #80827e,
+    button-delete: #757575,
+    placeholer-color: #858f7b,
+    line-pseudo: #d7dcd5,
+    color-pseudo:#2f3327,
+    color-selection:#93a286,
+    color-navbar: #393d31,
+    color-header:#6a765f,
+    color-price: #a4a5a2,
+    color-product: #35392d,
+    color-button: #68745c,
+    color-primary: #80827e,
+    color-white:#FFFFFF,
+    color-arrow: #7f8c70,
+    color-tabs: #2f3327,
+    color-subscribe: #96a58a,
+    color-slider: #313529,
+    text-input: #68745c,
+    text-footer: #80827e,
+    text-color-button: #234504,
+    text-subscribe: #96a58a,
+    text-title:#2f3327,
+    text-list-category: #90918d,
+    text-color:#f8f7f6,
+    text-color-hover: #727d67,
+    text-option: #768371,
+    text-breadcrumb: #68745c,
+    footer-icon: #68745c,
+);
+
+:root {
+
+    /*Begin color*/
+    @each $name,
+    $color in $colors {
+        --color-#{$name}: #{$color};
+    }
+
+    /*End color*/
+
+
+}
+
+//End variable root
+/* ==========================================================================
+   # END VARIABLE SETTING
+   ==========================================================================
+*/
